@@ -1,10 +1,13 @@
-/*
- *= require spree/frontend
-*/
+
 
 #reviews div.header {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+div.review{
+ 
+ margin: 25px 5px;
 }
 
 .lit {
@@ -45,28 +48,24 @@ div.rating-cancel, div.star-rating {
   overflow: hidden
 }
 
-div.rating-cancel, div.rating-cancel a {
-  background: transparent url(<%= asset_path('store/reviews/delete.gif') %>) no-repeat scroll 0 -1px;
+
+
+div.star-rating a {
+  background: url(<%= asset_path('store/reviews/star-outline.svg') %>) no-repeat 0 0px;
 }
 
-div.star-rating, div.star-rating a {
-  background: url(<%= asset_path('store/reviews/star.gif') %>) no-repeat 0 0px
-}
 
-div.rating-cancel a, div.star-rating a {
+ div.rating-cancel a, div.star-rating a {
   display: block;
-  width: 16px;
+  width: 20px;
   height: 100%;
   background-position: 0 0px;
   border: 0
 }
 
-div.star-rating-on a {
-  background-position: 0 -32px !important
-}
 
-div.star-rating-hover a {
-  background-position: 0 -32px
+div.star-rating-hover a,div.star-rating-on a {
+ background: url(<%= asset_path('store/reviews/star.svg') %>) no-repeat 0 0px;
 }
 
 /* Read Only CSS */
@@ -78,6 +77,14 @@ div.star-rating-readonly a {
 div.star-rating {
   background: transparent !important;
   overflow: hidden !important
+}
+
+div.rating-cancel, div.rating-cancel star-rating-hover {
+  display: none !important;
+}
+
+svg.star-color{
+ fill: green;
 }
 
 /* END jQuery.Rating Plugin CSS */
