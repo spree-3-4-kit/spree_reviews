@@ -1,6 +1,9 @@
-<div class="row center-sm text-left">
-  <div class="col-sm-12 col-md-6">
-    <%= content_tag :h3, Spree.t(:leave_us_a_review_for, name: @product.name), class: 'new-review-title' %>
-    <%= render 'form', review: @review, product: @product %>
+<div class="col-sm">
+  <div class="row center-sm text-left">
+    <div class="col-sm-12 col-md-6">
+      <%= content_tag :p, Spree.t(:leave_us_a_review_for), class: 'micro new-review-title text-center' %>
+        <h2 style="margin:0 0 15px 0; text-align:center;"><%= @product.name %></h2>
+      <%= render 'form', review: @review, product: @product %>
+    </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 <%= form_for review, url: product_reviews_path(product), html: { method: :post } do |f| %>
   <%= render 'spree/shared/error_messages', target: review %>
 
-  <div class="form-group">
+  <div class="form-group text-center">
     <%= f.label :rating %>
     <%= render 'spree/reviews/stars', stars: review.rating, edit_enabled: true %>
   </div>
@@ -30,7 +30,7 @@
     </div>
   <% end %>
 
-  <div class="form-actions">
+  <div class="form-actions text-center">
     <%= f.submit Spree.t(:submit_your_review), class: 'btn btn-default' %>
   </div>
 <% end %>
