@@ -60,9 +60,9 @@ en:
     submitted_on: Submitted on
     unapproved_reviews: Unapproved
     voice:
-      one: "1 voice"
-      other: "%{count} voices"
-    was_this_review_helpful: "Was this review helpful to you?"
+      one: "1 vote"
+      other: "%{count} Votes"
+    was_this_review_helpful: "Was this review helpful?"
     write_your_own_review: Write your own review
     you_must_enter_value_for_rating: "You must enter a value for rating."
     anonymous: Anonymous
