@@ -23,7 +23,7 @@ en:
     back_reviews: Back to the reviews
     based_upon_review_count:
       one: based upon one review
-      other: "based upon %{count} reviews"
+      other: "average from %{count} reviews"
     by: by
     editing_review_for_html: 'Editing review for %{link}'
     error_approve_review: Error approving review
