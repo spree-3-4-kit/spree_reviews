@@ -1,9 +1,9 @@
 <div class="review spree-well" <% if !Spree::Reviews::Config[:feedback_rating] && (Spree::Reviews::Config[:require_login] || spree_current_user) %>style="padding-bottom:0;"<% end %> itemprop="reviews" itemscope itemtype="http://schema.org/Review">
-  <h3 style="margin:0;">
   <span class="reviews-rating" title="<%= txt_stars(review.rating) %>">
     <%= render 'spree/reviews/stars', stars: review.rating %>
   </span>
-  <span itemprop="name"> - <%= review.title %></span>
+<h3 style="margin:0;">
+  <span itemprop="name"><%= review.title %></span>
 </h3>
   <span class="attribution hide"><span class="micro"><%= Spree.t(:submitted_on) %></span>
     <strong><%= l review.created_at.to_date %></strong>
