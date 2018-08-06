@@ -9,9 +9,4 @@
     <p class="micro" style="margin-bottom:5px;">
       (<%= Spree.t(:based_upon_review_count, count: reviews_count) %>)
     </p>
-
-  <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-    <span itemprop="ratingValue" content="<%= stars %>"></span>
-    <span itemprop="reviewCount" content="<%= reviews_count %>"></span>
-  </div>
 </div>
