@@ -21,7 +21,7 @@
       <% end %>
 </div>
   <div class="review-body">
-      <%= simple_format(review.review) %>
+      <%= raw (review.review) %>
   </div>
   <% if Spree::Reviews::Config[:feedback_rating] && (!Spree::Reviews::Config[:require_login] || spree_current_user) %>
     <div class="feedback_review row middle-sm" id="feedback_review_<%= review.id %>">
