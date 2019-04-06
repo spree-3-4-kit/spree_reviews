@@ -4,8 +4,8 @@ en:
     attributes:
       spree/review:
         name: Your Name
-        title: Title
-        review: Content
+        title: Review Title
+        review: Review Content
         rating: Rating
         created_at: Date
         ip_address: IP
@@ -17,6 +17,9 @@ en:
         other: "%{count} reviews"
   spree:
     approval_status: Approval status
+    enter_your_name: Enter your name
+    give_your_review_a_title: Give your review a title.
+    enter_your_review: Please leave an honest and helpful review of this product.
     approve: Approve
     approved_reviews: Approved
     average_customer_rating: Average rating

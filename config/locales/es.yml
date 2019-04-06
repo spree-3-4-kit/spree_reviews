@@ -17,6 +17,9 @@ es:
         other: "%{count} valoraciones"
   spree:
     approval_status: Estado de aprobación
+    enter_your_name: Enter your name
+    give_your_review_a_title: Give your review a title.
+    enter_your_review: Please leave an honest and helpful review of this product.
     approve: Aprobar
     approved_reviews: Aprobado
     average_customer_rating: "Puntuación media"
