@@ -12,4 +12,8 @@ module Spree::ReviewsHelper
     res += " #{Spree.t('out_of_5')}" if show_out_of
     res
   end
+
+  def accurate_average(product)
+    product.avg_rating.ceil(1) || 0
+  end
 end
